@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses</title>
+</head>
+<body>
+    <style>
+        body{
+            background-color:gainsboro;
+            margin: 0px;
+            padding: 0px;;
+        }
+        header{
+            background-color:gray;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            font-size: larger;
+            color: #fff;
+        }
+        .navbar{
+            padding:30px;
+            width:auto;
+            height: auto;
+        }
+        .link{
+            margin-right: 600px;
+        }
+        .navbar .links ul {
+            display: flex;
+            padding-left: 600px;
+        }
+        li{
+            padding-left: 50px;
+            float: right;
+            list-style: none;
+        }
+        li a{
+            text-decoration: none;
+            color: black;
+        }
+        .active{
+            color: #d41212;
+        }
+        a:hover{
+            color: #d41212;
+        }
+        .whole{
+            display: flex;
+            height: auto;
+            width: 98%;
+            margin-left: 5px;
+            margin-right:5px;
+        }
+        .about{
+            width: 50vw;
+            height: 25vw;
+            margin-left:20px;
+            background-color:grey;
+            border-radius: 2%;
+        }
+        img{
+            /* padding-top: 55px; */
+            padding-left: 10px;
+            padding-right: 10px;
+            width:273px;
+            height: 250px;
+        }
+        .about-text{
+            /* width:200px; */
+        }
+        .main{
+            width: 550px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .about-text h1{
+            /* width: 100px; */
+            color: #fff;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        .about-text h5{
+            color: #fff;
+            font-size: 20px;
+            text-transform: capitalize;
+            margin-bottom: 3px;
+            letter-spacing: 2px;
+        }
+        span{
+            color: #900d;
+        }
+        .about-text p{
+            color:black;
+            letter-spacing: 1px;
+            line-height: 18px;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        .about2{
+            width: 50vw;
+            height: 25vw;
+            margin-left: 40px;
+            background-color:grey;
+            border-radius: 2%;
+        }
+        button{
+            background:#900d ;
+            color: #fff;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 13px 50px;
+            border-radius: 30px;
+            transition: .4s;
+        }
+        .main2{
+            width: 550px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .about2-text h1{
+            color: #fff;
+            font-size: 20px;
+            text-transform: capitalize;
+        }
+        .about2-text h5{
+            color: #fff;
+            font-size: 17px;
+            text-transform: capitalize;
+            margin-bottom: 3px;
+            letter-spacing: 2px;
+        }
+        .about2-text p{
+            color:black;
+            letter-spacing: 1px;
+            line-height: 18px;
+            font-size: 15px;
+            margin-bottom: 10px;
+        }
+        button:hover{
+            background: transparent;
+            border:2px solid #900d;
+            cursor: pointer;
+        }
+        button a{
+            color: #fff;
+            text-decoration: none;
+        }
+    </style>
+    <header>
+        <h2>Our Courses, Online & Physical Courses</h2>
+    </header>
+    <nav class="navbar">
+        <div class="links">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="course.html">Courses</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="whole">
+    <section class="about">
+        <div class="main">
+           <img src="image/uscom.webp" alt="">
+           <div class="about-text">
+            <h1>online <span> Courses</span></h1>
+            <h5>Software Engineering <br> & Networking</h5>
+            <p>You can enroll our software engineering courses from any where you are at Your give time.Please fill free to reach us through our contacts. For more information click on learn more button.</p>
+            <button type="button"><a href="main.html">Learn More</a></button>
+           </div>
+        </div>
+    </section>
+    <section class="about2">
+        <div class="main2">
+            <img src="image/Kibabiicom.jpg" alt="">
+           <!-- <img src="image/uscom.webp" alt=""> -->
+           <div class="about2-text">
+            <h1>Physical <span> Courses</span></h1>
+            <h5>Software Engineering <br> & Networking.</h5>
+            <p>Join us in our institutions which are all over the country for Networking courses which are offered at ffordable fee. to apply for these courses please click on the learn more button or visit our addmission offices in any our institutions.</p>
+            <button type="button"><a href="physical.html">Learn More</a></button>
+           </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
