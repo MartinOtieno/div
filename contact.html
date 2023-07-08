@@ -52,41 +52,34 @@
             /* background-color: aqua; */
             width: 90%;
             height: auto;
-            margin-left: 20px;
-            margin-right: 20px;
-            border: solid gray;
+            margin-left: 40px;
+            margin-right: 100px;
+            /* border: solid gray; */
             display: flex;
         }
         .manager{
             background-color: gray;
             width: 20vw;
             height: auto;
-            margin-left: 50px;
-            padding-left: 10px;
-            padding-right: 10px;
+            margin-left: 200px;
+            /* padding-left: 10px; */
+            /* padding-right: 10px; */
             padding-bottom: 10px;
         }
-        .director{
-            background-color:gray;
-            width: 20vw;
-            height: auto;
-            margin-left: 10px;
-            margin-right: 10px;
-            padding-left: 10px;
-            padding-right: 10px;
-            padding-bottom: 10px;
-        }
+        
         .officer{
             background-color: gray;
-            width: 15vw;
+            width: 20vw;
             height: auto;
+            margin-right: 30px;
+            margin-left: 80px;
             padding-left: 20px;
             padding-right: 10px;
             padding-bottom: 10px;
             /* display: block; */
         }
-        img{
-            margin-left: 65px;
+       .manager img{
+            margin-left: 15px;
             width: 12vw;
             height: 12vw;
         }
@@ -122,10 +115,10 @@
             padding-right: 150px;
              /* padding-left: 60px; */
         }
-        li i{
+        .officer li i{
               padding-left: 10px;
               color:blue;
-              font-size:30px;
+              font-size:20px;
         }   
         .man{
             margin-top: 40px;
@@ -133,7 +126,40 @@
         }
         label{
             margin-top: 30px;
+            padding-bottom: 40px;
         }
+        .login{
+            /* background-color: gray; */
+            margin-left:  30px;
+        }
+        form{
+            background-color: gray;
+            margin-left: 20px;
+            /* margin-top: 40px; */
+            padding: 20px, 20px, 20px, 20px;
+        }
+        fieldset{
+            margin-top: 40px;
+            width: 30vw;
+        }
+        button{
+            background:#900d ;
+            color: #fff;
+            text-decoration: none;
+            border: 2px solid transparent;
+            font-weight: bold;
+            padding: 13px 50px;
+            border-radius: 30px;
+            transition: .4s;
+            margin-left: 80px;
+            margin-top: 20px;
+        }
+        button:hover{
+            background: transparent;
+            border:2px solid #900d;
+            cursor: pointer;
+        }
+       
     </style>
     <header>
         <p>Our Contacts, Contact Khan Tech Accademy Today.</p>
@@ -159,25 +185,43 @@
         <p class="name"> Mr. Martin Otieno</p>
         <p class="man">Phone Number: +254773821963 or +254704340469</p>
         </div>
-        <div class="director">
-           <label for="">Telephone Phone:</label>
-        </div>
+    
         <div class="officer">
             <h2>Our Social Media Pages.</h2>
             <div class="social-media">
+                <li><i class='bx bxl-whatsapp'></i></li>
+                <li><i class='bx bxs-message-dots' ></i></li>
+                <li><i class='bx bxs-phone-call' ></i></li>
                 <li><i class='bx bxl-facebook-circle'></i>facebook</li>
                 <li><i class='bx bxl-twitter'></i>twiter</li>
                 <li><i class='bx bxl-instagram'></i>instagram</li>
                 <li><i class='bx bxl-linkedin'></i>linkedin</li>
             </div>
         </div>
-        <div class="aside">
-            <aside>
-                <article>
-
-                </article>
-            </aside>
+        <div class="login">
+            <fieldset>
+                <legend> Presonal Details</legend>
+                <form action="login">
+                    <label for="name">First Name: </label>
+                    <input type="text" ><br>
+                    <label for="lname">Last Name: </label>
+                    <input type="text"><br>
+                    <label for="">Email Address: </label>
+                    <input type="email"><br>
+                    <label for="">Gender: </label><br>
+                    <input type="radio">
+                    <label for="text">Male</label><br>
+                    <input type="radio">
+                    <label for="text">Female</label><br>
+                    <input type="radio">
+                    <label for="">others</label><br>
+                    <label for="">Password: </label>
+                    <input type="password"><br>
+                    <button>Submit</button>
+                </form>
+            </fieldset>
         </div>
     </section>
+    
 </body>
 </html>
