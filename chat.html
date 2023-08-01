@@ -6,8 +6,41 @@
     body {
       font-family: Arial, sans-serif;
       background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
     }
-
+    header{
+      background-color: grey;
+      width: 100%;
+      height: 6vw;
+    }
+    
+    section{
+      
+      display: block;
+      margin-top: 80px;
+    }
+    ul{
+            display: flex;
+            float: right;
+        }
+        ul li{
+            padding-left: 20px;
+            list-style: none;
+            margin-right: 50px;
+            margin-top: 40px;
+            text-decoration: none;
+        }
+        ul li a{
+            text-decoration: none;
+            color: black;
+        }
+        a .active{
+            color: #d41212;
+        }
+        a:hover{
+            color:#d41212;
+        }
     .container {
       width: 300px;
       margin: 0 auto;
@@ -50,6 +83,15 @@
   </style>
 </head>
 <body>
+  <!-- <header>
+    <h3>Apply Now</h3>
+    <ul>
+      <li><a href="index.html" class="active">Home</a></li>
+      <li><a href="course.html">Back to Courses</a></li>
+      
+  </ul>
+  </header> -->
+  <section>
   <div class="container">
     <h2>Login</h2>
     <form id="loginForm" action="#">
@@ -70,5 +112,6 @@
     </form>
     <p class="center">Already have an account? <a href="#loginForm">Login</a></p>
   </div>
+</section>
 </body>
 </html>

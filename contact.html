@@ -215,13 +215,22 @@
                     <label for="text">Female</label><br>
                     <input type="radio">
                     <label for="">others</label><br>
-                    <label for="">Password: </label>
+                    <label for="text">Phone Number</label><br>
+                    <input type="text" onkeypress="isInputNumber(event)"><br>
+                    <label for="">Password: </label><br>
                     <input type="password"><br>
                     <button>Submit</button>
                 </form>
             </fieldset>
         </div>
     </section>
-    
+    <script>
+        function isInputNumber(evt){
+            var char= String.fromcharCode(evt.which);
+            if(!(/0-9/).test(ch)){
+                evt.preventDefault( ); 
+            }
+        }
+    </script>
 </body>
 </html>
